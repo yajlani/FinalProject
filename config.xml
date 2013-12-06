@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+             xmlns:rim="http://www.blackberry.com/ns/widgets"
+             version="1.0.0.0" id="com.example.HelloWorld">
+			
+ 
+   <author href="http://www.example.com/"> Yazan Ajlani </author>
+ 
+   <name>Contacts</name>
+ 
+   <description>
+         My Algonquin
+   </description>
+   
+    <icon src="images\icon.png" />
+    <icon src="images\icon.png" rim:hover="true" />
+    <rim:splash src="images\bb10-splash-landscape.png" />
+    <rim:splash src="images\bb10-splash-portrait.png" />
+    <content src="index.html" />
+  	<feature id="blackberry.ui.menu" />
+  	<feature id="blackberry.ui.dialog"/>
+  	<feature id="blackberry.identity" />
+  	<feature id="blackberry.system.event" />
+  	<feature id="blackberry.app" />
+  	<feature id="blackberry.app.event"/>
+  	<feature id="blackberry.ui.contextmenu"/>
+	<feature id="blackberry.pim.contacts" />
+	
+	<access uri="*" subdomains="true"> 
+		<feature id="blackberry.app" required="true" version="1.0.0.0" />
+		<feature id="blackberry.invoke" required="true" version="1.0.0.0" />
+	</access>
+	
+	<rim:permissions>
+ 		<rim:permit>access_location_services</rim:permit>
+		<rim:permit>access_pimdomain_contacts</rim:permit>
+ 	</rim:permissions>
+
+ 
+</widget>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript" src="js/geo.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="js/jquery-2.0.3.js"></script>
+    <title>HelloGeo</title>
+	
+    <meta id="viewport" name="viewport" content="user-scalable=no,
+        width=device-width" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+ 
+<body>
+    <div id="container">
+        <div id="world">
+            <img src="images/hellogeo.png" width="500" height="500" alt="world" />
+        </div>    
+        <div id="button">
+            <h2>Hello world. Where am I?</h2>
+			<button type="button" id="btnGPSDefault" onClick="getPosition();">Get my coordinates</button>
+			<div id="geolocationInfo"></div>
+        </div>
+    </div>
+
+</body>
+</html>
